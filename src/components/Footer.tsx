@@ -33,7 +33,7 @@ const Footer = () => {
               <a href="https://linkedin.com/in/annamalailakshmanan" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-purple-600">
                 LinkedIn
               </a>
-              <a href="mailto:annamalai.lakshmanan@mavt.ethz.ch" className="block text-gray-600 hover:text-purple-600">
+              <a href="mailto:malai.studies@gmail.com" className="block text-gray-600 hover:text-purple-600">
                 Email
               </a>
             </div>
