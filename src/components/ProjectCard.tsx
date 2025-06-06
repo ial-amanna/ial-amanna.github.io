@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 interface ProjectCardProps {
     title: string;
     description: string;
-    imageUrl: string;
+    imageUrl?: string;
     organization?: string;
     period?: string;
     reportUrl?: string;
@@ -23,7 +23,7 @@ interface ProjectCardProps {
   }: ProjectCardProps) => {
     return (
       <div className="glass rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+        {imageUrl && <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />}
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2 text-gray-900">{title}</h3>
           {organization && (

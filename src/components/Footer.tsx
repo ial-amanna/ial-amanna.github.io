@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Connect</h3>
             <div className="space-y-2">
-              <a href="https://github.com/annamalailakshmanan" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-purple-600">
+              <a href="https://github.com/ial-amanna" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-purple-600">
                 GitHub
               </a>
               <a href="https://linkedin.com/in/annamalailakshmanan" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-purple-600">

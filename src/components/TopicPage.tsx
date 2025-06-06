@@ -9,7 +9,7 @@ interface TopicPageProps {
   projects: Array<{
     title: string;
     description: string;
-    imageUrl: string;
+    imageUrl?: string;
     reportUrl?: string;
     presentationUrl?: string;
   }>;
