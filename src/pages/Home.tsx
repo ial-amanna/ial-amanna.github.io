@@ -82,7 +82,7 @@ const Home = () => {
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="flex items-start">
                       <img 
-                        src="/images/logos/ethz.png" 
+                        src={import.meta.env.BASE_URL + "images/logos/ethz.png"} 
                         alt="ETH Zürich" 
                         className="w-16 h-16 object-contain mr-4"
                       />
@@ -97,7 +97,7 @@ const Home = () => {
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="flex items-start">
                       <img 
-                        src="/images/logos/psg.png" 
+                        src={import.meta.env.BASE_URL + "images/logos/psg.png"} 
                         alt="PSG College of Technology" 
                         className="w-16 h-16 object-contain mr-4"
                       />
@@ -119,7 +119,7 @@ const Home = () => {
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="flex items-start">
                       <img 
-                        src="/images/logos/ikim.png" 
+                        src={import.meta.env.BASE_URL + "images/logos/ikim.png"} 
                         alt="IKIM" 
                         className="w-16 h-16 object-contain mr-4"
                       />
@@ -135,7 +135,7 @@ const Home = () => {
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="flex items-start">
                       <img 
-                        src="/images/logos/hitachi.jpg" 
+                        src={import.meta.env.BASE_URL + "images/logos/hitachi.jpg"} 
                         alt="Hitachi Energy" 
                         className="w-16 h-16 object-contain mr-4"
                       />
@@ -151,7 +151,7 @@ const Home = () => {
                   <div className="bg-gradient-to-br from-purple-50 to-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <div className="flex items-start">
                       <img 
-                        src="/images/logos/tti.jpg" 
+                        src={import.meta.env.BASE_URL + "images/logos/tti.jpg"} 
                         alt="TTI" 
                         className="w-16 h-16 object-contain mr-4"
                       />
