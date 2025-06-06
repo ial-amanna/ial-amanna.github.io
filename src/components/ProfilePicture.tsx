@@ -22,7 +22,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({ imageUrl }) => {
           <div
             className="rounded-full w-full h-full bg-cover bg-center"
             style={{
-              backgroundImage: `url(${imageUrl})`,
+              backgroundImage: `url(${import.meta.env.BASE_URL}${imageUrl})`,
               backgroundColor: '#f3f4f6', // Light gray background if image fails to load
             }}
           />
