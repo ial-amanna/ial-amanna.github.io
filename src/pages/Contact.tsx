@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import VisitorCounter from '../components/VisitorCounter';
+//import VisitorCounter from '../components/VisitorCounter';
 
 const Contact = () => {
   return (
@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <VisitorCounter />
+            {/* <VisitorCounter /> */}
           </div>
         </div>
       </motion.div>
