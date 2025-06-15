@@ -3,13 +3,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import TopicPage from "./components/TopicPage";
 import { projectsByTopic } from "./data/projects";
 import LoadingIndicator from "./components/SplashScreen";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,11 +28,9 @@ const App = () => {
         <div className="flex-grow flex items-center justify-center">
           {loading ? (
             <LoadingIndicator isLoading={loading} />
-          ) : (
-            <Routes>
+          ) : (            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/about" element={<About />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/contact" element={<Contact />} />
               {Object.keys(projectsByTopic).map((topicId) => (

@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
-
   const navItems = [
     { name: "Projects", path: "/projects" },
-    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 
