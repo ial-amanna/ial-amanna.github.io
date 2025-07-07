@@ -96,7 +96,7 @@ export const projectsByTopic: ProjectsByTopic = {
       organization: 'Reliability and Risk Engineering Lab, ETH Zürich',
       period: 'Jan 2023 - Apr 2023',
       tags: ['Machine Learning', 'Graph Neural Networks', 'Data Analysis'],
-      link: 'https://docs.google.com/presentation/d/1QV51QCoukQvfpR6q4YjmSHPN18yuVOOG/edit?usp=drive_link&ouid=105761956712648740434&rtpof=true&sd=true'
+      // link: 'https://docs.google.com/presentation/d/1QV51QCoukQvfpR6q4YjmSHPN18yuVOOG/edit?usp=drive_link&ouid=105761956712648740434&rtpof=true&sd=true'
     },
     {
       title: '3D Human Motion Prediction',
