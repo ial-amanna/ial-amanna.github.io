@@ -78,16 +78,16 @@ const Home = () => {
                   
                   {/* Right column - content */}                  <div className="md:w-2/3 space-y-4 text-gray-600 leading-relaxed">
                     <p className="text-base">
-                      I grew up fascinated by technology and its potential to solve complex problems. This passion led me to pursue a path in <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">AI and computer vision</span>, where I discovered the thrill of creating intelligent systems.
+                      I grew up fascinated by technology and its potential to solve complex problems. This passion led me to pursue a path in <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">AI and Computer Vision</span>, where I discovered the thrill of creating intelligent systems.
                     </p>
                     <p className="text-base">
-                      I recently completed my Master's in Electrical Engineering and Information Technology at <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">ETH Zürich</span>, where I focused on advanced machine learning techniques and computer vision applications.
+                      I recently completed my Master's in Electrical Engineering and Information Technology at <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">ETH Zürich</span>, where I focused on building a strong foundation on advanced ML.
                     </p>
                     <p className="text-base">
                       Whether it's developing algorithms for medical imaging, optimizing systems for robotics, or exploring the latest in <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">LLMs</span>, I've always been driven by the challenge of making technology smarter, faster, and more accessible.
                     </p>
                     <p className="text-base">
-                      My work combines <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">technical expertise</span> with a deep understanding of real-world applications, particularly in the fields of healthcare, autonomous systems, and edge AI.
+                      My work combines technical expertise with a deep understanding of real-world applications, particularly in the fields of <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">Healthcare</span>, <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">Autonomous Systems</span>, and <span className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 bg-clip-text text-transparent font-medium">Edge AI</span>.
                     </p>
                   </div>
                 </div>
