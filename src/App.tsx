@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router basename="/my-portfolio/">
+    <Router basename="/">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <div className="flex-grow flex items-center justify-center">
