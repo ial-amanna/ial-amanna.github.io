@@ -1,16 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Experience from "./pages/Experience";
-import Contact from "./pages/Contact";
-import TopicPage from "./components/TopicPage";
-import { projectsByTopic } from "./data/projects";
-import LoadingIndicator from "./components/SplashScreen";
-import { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import TopicPage from './components/TopicPage';
+import { projectsByTopic } from './data/projects';
+import LoadingIndicator from './components/SplashScreen';
 
-const App = () => {
+function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,6 +20,15 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Handle GitHub Pages SPA redirect
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      window.history.replaceState(null, '', redirect);
+    }
+  }, []);
+
   return (
     <Router basename="/">
       <div className="min-h-screen flex flex-col">
@@ -28,10 +36,10 @@ const App = () => {
         <div className="flex-grow flex items-center justify-center">
           {loading ? (
             <LoadingIndicator isLoading={loading} />
-          ) : (            <Routes>
+          ) : (
+            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/experience" element={<Experience />} />
               <Route path="/contact" element={<Contact />} />
               {Object.keys(projectsByTopic).map((topicId) => (
                 <Route
@@ -48,6 +56,6 @@ const App = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default App;
