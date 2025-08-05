@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import type { FC } from "react";
 
 interface ProfilePictureProps {
     imageUrl: string;
 }
 
-const ProfilePicture: React.FC<ProfilePictureProps> = ({ imageUrl }) => {
+const ProfilePicture: FC<ProfilePictureProps> = ({ imageUrl }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}

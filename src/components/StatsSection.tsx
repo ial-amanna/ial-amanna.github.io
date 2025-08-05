@@ -1,15 +1,15 @@
 // src/components/StatsSection.tsx
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaGraduationCap, FaCode, FaLaptopCode, FaRobot } from "react-icons/fa";
+import { FaLaptopCode, FaRobot } from "react-icons/fa";
 import { BiCodeAlt } from "react-icons/bi";
-import { AiOutlineExperiment } from "react-icons/ai";
+import type { FC, ReactNode } from "react";
 
 interface StatItem {
   label: string;
   value: string;
   description: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   category: string;
   gradient: string;
 }
@@ -49,7 +49,7 @@ const stats: StatItem[] = [
   },
 ];
 
-const StatCard: React.FC<{ stat: StatItem; index: number }> = ({ stat, index }) => {
+const StatCard: FC<{ stat: StatItem; index: number }> = ({ stat, index }) => {
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -94,7 +94,7 @@ const StatCard: React.FC<{ stat: StatItem; index: number }> = ({ stat, index }) 
   );
 };
 
-const StatsSection: React.FC = () => {
+const StatsSection: FC = () => {
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,

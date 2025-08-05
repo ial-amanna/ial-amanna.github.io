@@ -25,7 +25,7 @@ const TopicPage: React.FC<TopicPageProps> = ({ projects }) => {
 
   if (!topic) {
     // Log if topic is not found and what topicId was looked for
-    console.log(`Topic with id '${topicId}\' not found.`);
+    console.log(`Topic with id '${topicId}' not found.`);
     return (
       <TransitionWrapper>
         <div className="container mx-auto py-20 px-6">

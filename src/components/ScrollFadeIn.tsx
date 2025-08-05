@@ -1,9 +1,9 @@
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { useInView } from "framer-motion";
 
 interface ScrollFadeInProps {
-  children: React.ReactNode;
+  children: ReactNode;
   delay?: number;
 }
 

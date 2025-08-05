@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 const variants = {
   initial: { opacity: 0, y: 10 },
@@ -6,7 +7,7 @@ const variants = {
   exit: { opacity: 0, y: -10 },
 };
 
-const TransitionWrapper = ({ children }: { children: React.ReactNode }) => {
+const TransitionWrapper = ({ children }: { children: ReactNode }) => {
   return (
     <motion.div
       variants={variants}
