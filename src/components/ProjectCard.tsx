@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 interface ProjectCardProps {
     title: string;
     description: string;
@@ -73,4 +71,3 @@ interface ProjectCardProps {
   };
   
   export default ProjectCard;
-  

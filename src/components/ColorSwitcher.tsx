@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 
 const vars = [
   { name: "Primary", varName: "--gradient-from", defaultColor: "#7c3aed" },  // violet-600
@@ -11,7 +11,7 @@ export default function ColorSwitcher() {
     Object.fromEntries(vars.map(v => [v.varName, v.defaultColor]))
   );
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>, varName: string) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>, varName: string) => {
     const val = e.target.value;
     document.documentElement.style.setProperty(varName, val);
     setPicked(prev => ({ ...prev, [varName]: val }));

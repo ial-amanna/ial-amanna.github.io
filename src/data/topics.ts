@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaRobot, FaBrain, FaChartLine, FaMicrochip, FaCogs } from 'react-icons/fa';
+import { FaLaptopCode, FaBrain, FaChartLine, FaMicrochip, FaCogs } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 
 interface Topic {

@@ -1,5 +1,3 @@
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import ScrollFadeIn from "../components/ScrollFadeIn";
 import TransitionWrapper from "../components/TransitionWrapper";
 
